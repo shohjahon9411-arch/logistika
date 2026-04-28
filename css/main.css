@@ -173,6 +173,17 @@ body {
     margin-bottom: 50px;
 
 }
+.bg-tablet{
+    display: none;
+    background-image: url(../images/images/dg\ truck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
 
 @media(max-width:1098px) {
     .container {
@@ -236,5 +247,13 @@ body {
     .card p {
         font-weight: 400px;
         width: 390px;
+    }
+    .bg-truck{
+        display: none;
+    }
+    .bg-tablet{
+        display: block;
+        width: 100%;
+        height: 432px;
     }
 }
