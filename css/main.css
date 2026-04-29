@@ -264,6 +264,28 @@ body {
     row-gap: 30px;
 }
 
+.video-play {
+    width: 1240px;
+    height: 667px;
+    margin-top: 50px;
+    z-index: -2;
+}
+
+.play-button {
+    position: absolute;
+    top: 316px;
+    right: 655px;
+    z-index: 2;
+}
+
+footer {
+    background-color: var(--cl-green);
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #fff;
+    display: flex;
+}
+
 @media(max-width:1098px) {
     .container {
         padding: 0 10px;
@@ -379,5 +401,15 @@ body {
 
     .etap-card {
         width: 590px;
+    }
+
+    .video-play {
+        width: 675px;
+        height: 405px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+        justify-content: center;
     }
 }
