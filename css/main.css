@@ -4,6 +4,7 @@
     scroll-behavior: smooth;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 /* exo-2-regular - latin */
@@ -122,168 +123,126 @@ body {
 
 }
 
-.card {
-    width: 225px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 14px;
-    font-size: 20px;
-}
-
-.card {
-    border: 1px solid #000000;
-    padding: 0 20px 0 0;
-    border: none;
-    border-right: 1px solid var(--cl-title);
-}
-
-.card img {
-    width: 92px;
-
-}
-
-.card p {
-    font-size: 16px;
-    font-family: 'PT Sans', sans-serif;
-}
-
-.info-card-section {
+.services-list {
+    max-width: 100%;
+    margin-top: 67px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 50px;
-}
-
-.info-card-section {
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-    padding: 10px 5px;
+    padding: 40px 60px;
+    gap: 65px;
+    box-shadow: 2px 5px 15px 5px rgba(34, 60, 80, 0.52);
     border-radius: 20px;
 }
 
-.bg-truck {
-    width: 1240px;
-    height: 432px;
-    background-image: url(../images/images/bg\ trtuck\ decstop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+.service-item {
+    border-right: 1px solid silver;
+    padding-right: 10px;
+}
+
+.service-item:nth-child(3) {
+    border: none;
+}
+
+.image-wrap {
+    width: 92px;
+    height: 92px;
+    background-color: #E9E9EC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-title {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 24px;
+}
+
+.service-text {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 16px;
+    color: var(--cl-silver);
+}
+
+.fact-section {
+    margin-top: 67px;
+}
+
+.fack-main-image {
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    overflow: hidden;
+    height: 453px;
+}
+
+.act-bg-image {
+    width: 100%;
 
 }
 
-.bg-tablet {
+.fact-img-title {
+    width: 362px;
+    font-size: 48px;
+    font-weight: 600;
+    color: white !important;
+}
+
+.bg-form {
+    position: absolute;
+    clip-path: polygon(1% 0, 60% 0, 100% 100%, 0% 100%);
+    background-color: #0B7572;
+    z-index: 2;
+    width: 750px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-list {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 66px;
+
+}
+
+.fact-item {
+    width: 447px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.fact-image-wrap {
+    width: 80px;
+    height: 80px;
+    background-color: #E9E9EC;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fact-tablet-image {
     display: none;
-    background-image: url(../images/images/dg\ truck.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
-
-
 }
 
-.bg-cards {
-    width: 1242px;
-    display: flex;
-    column-gap: 500px;
-    margin-top: 50px;
-}
-
-.bg-cards-info {
-    display: flex;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-.bg-cards-info h5 {
-    font-size: 24px;
+.fact-title {
+    font-size: 20px;
     font-weight: 600;
 }
 
-.bg-cards-info img {
-    width: 92px;
-}
-
-.cost-section-card {
-    margin-top: 40px;
-
-}
-
-.cost-section-card p {
-    font-family: 'PT Sans', sans-serif;
+.fact-text {
+    padding-top: 16px;
     font-size: 16px;
     font-weight: 400;
-    margin-top: 20px;
-    width: 557px;
-}
-
-.cost-card-img {
-    display: flex;
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-.card-img p {
-    width: 412px;
-}
-
-.cost-info-h3 {
-    font-size: 44px;
-    font-weight: 700;
-}
-
-.postavka {
-    margin-top: 50px;
-}
-
-.etap {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-}
-
-.etap-card {
-    display: flex;
-    column-gap: 20px;
-    align-items: center;
-    width: 1183px;
-    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-    padding: 10px 5px;
-    border-radius: 20px
-}
-
-.etap-info {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-}
-
-.video-play {
-    width: 1240px;
-    height: 667px;
-    margin-top: 50px;
-    z-index: -2;
-}
-
-.play-button {
-    position: absolute;
-    top: 316px;
-    right: 655px;
-    z-index: 2;
-}
-
-footer {
-    background-color: var(--cl-green);
-    padding-top: 20px;
-    margin-top: 30px;
-    color: #fff;
-    display: flex;
+    color: var(--cl-silver);
 }
 
 @media(max-width:1098px) {
@@ -324,92 +283,175 @@ footer {
         margin-top: 73px;
     }
 
-    .info-card-section {
+
+    .services-list {
+        width: 100%;
         flex-direction: column;
-        row-gap: 50px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: none;
+        padding: 0;
+        gap: 16px;
     }
 
-    .card {
-        width: 890px;
-        display: flex;
+    .service-item {
+        width: 100%;
         border: none;
-        -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-        box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.35);
-        padding: 10px 5px;
+        padding: 32px;
+        -webkit-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+        -moz-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+        box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
         border-radius: 20px;
+        display: flex;
+        align-items: start;
+        gap: 32px;
     }
 
-    .card h5 {
+
+    .image-wrap {
+        width: 92px !important;
+        height: 92px !important;
+        background-color: #E9E9EC;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .service-title {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 0;
+    }
+
+    .service-text {
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 16px;
+        color: var(--cl-silver);
+    }
+
+
+    .fack-main-image {
+        display: none;
+    }
+
+    .fact-tablet-image {
+        display: block;
+        width: 100%;
+    }
+
+    .act-bg-image {
+        display: none;
+    }
+
+    .fact-img-title {
+        width: 362px;
+        font-size: 48px;
+        font-weight: 600;
+        color: white !important;
+    }
+
+    .bg-form {
+        position: absolute;
+        clip-path: polygon(1% 0, 60% 0, 100% 100%, 0% 100%);
+        background-color: #0B7572;
+        z-index: 2;
+        width: 750px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fact-list {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 0 20px;
+
+    }
+
+    .fact-item {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .fact-image-wrap {
+        width: 80px;
+        height: 80px;
+        background-color: #E9E9EC;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fact-title {
         font-size: 20px;
         font-weight: 600;
     }
 
-    .card p {
-        font-weight: 400px;
-        width: 390px;
+    .fact-text {
+        padding-top: 16px;
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--cl-silver);
     }
 
-    .bg-truck {
-        display: none;
+}
+
+@media(max-width: 576px) {
+
+    .services-list {
+        max-width: 100%;
+        margin-top: 67px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 24px;
+        gap: 20px;
+        box-shadow: 2px 5px 15px 5px rgba(34, 60, 80, 0.52);
+        border-radius: 20px;
     }
 
-    .bg-tablet {
-        display: block;
+    .service-item {
         width: 100%;
-        height: 432px;
-    }
-
-    .bg-cards {
-        display: flex;
+        border: none;
         flex-direction: column;
-        row-gap: 50px;
+        box-shadow: none;
     }
 
-    .wrapper-bg-card {
+    .image-wrap {
+        width: 92px !important;
+        height: 92px !important;
+        background-color: #E9E9EC;
+        border-radius: 50%;
         display: flex;
-        flex-direction: column;
-    }
-
-    .cost-card-img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .card-img img {
-        width: 690px;
-    }
-
-    .bg-cards {
-        align-items: center;
-    }
-
-    .etap {
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
-        align-items: center;
-        justify-content: center;
-
-    }
-
-    .etap img {
-        display: none;
-    }
-
-    .etap-card {
-        width: 590px;
-    }
-
-    .video-play {
-        width: 675px;
-        height: 405px;
-        display: flex;
-        flex-direction: column;
-        row-gap: 30px;
         align-items: center;
         justify-content: center;
     }
+
+
+    .service-title {
+        font-family: 'Exo 2', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        padding-top: 0;
+    }
+
+    .service-text {
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 16px;
+        color: var(--cl-silver);
+    }
+
 }
