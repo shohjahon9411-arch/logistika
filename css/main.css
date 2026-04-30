@@ -245,6 +245,47 @@ body {
     color: var(--cl-silver);
 }
 
+.work-info {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 667px;
+}
+
+.work-info-h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--cl-title);
+}
+
+.work-info-p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cl-silver);
+}
+
+.work-card-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.work-card {
+    margin-top: 40px;
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 15px 5px rgba(34, 60, 80, 0.52);
+}
+
+.work-card-info {
+    padding: 20px;
+}
+
 @media(max-width:1098px) {
     .container {
         padding: 0 10px;
@@ -406,6 +447,25 @@ body {
         color: var(--cl-silver);
     }
 
+    .work-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 350px;
+    }
+
+    .work-card {
+        width: 690px;
+        height: 247px;
+        -webkit-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+        -moz-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+        box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+    }
+
+    .work-card-wrapper:nth-child(3) {
+        display: none;
+    }
 }
 
 @media(max-width: 576px) {
@@ -453,5 +513,53 @@ body {
         padding-top: 16px;
         color: var(--cl-silver);
     }
+
+    .fact-section {
+        display: none;
+    }
+
+    .work-info {
+        width: 345px;
+    }
+
+    .work-info-h2 {
+        width: 344;
+        height: 29;
+        font-size: 24px;
+        font-weight: 600;
+
+    }
+
+    .work-info-p {
+        font-family: PT Sans;
+        font-weight: 400;
+        font-size: 15px;
+        leading-trim: NONE;
+        line-height: 150%;
+        letter-spacing: 0%;
+
+    }
+
+    .work-card-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 350px;
+    }
+
+    .work-card {
+        width: 345px;
+        height: 222px;
+    }
+
+    .card1 {
+        display: none;
+    }
+    .card2{
+        display: none;
+    }
+
+    
 
 }
