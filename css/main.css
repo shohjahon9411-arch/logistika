@@ -286,6 +286,130 @@ body {
     padding: 20px;
 }
 
+
+
+.etap-title {
+    font-family: Exo 2;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.etap-card {
+    display: flex;
+    column-gap: 56px;
+    position: relative;
+    padding: 32px;
+    -webkit-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+    -moz-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+    box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
+    border-radius: 10px;
+}
+
+.etap-card-info {
+    width: 556px;
+    height: 58px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    position: relative;
+}
+
+.sold {
+    position: relative;
+    font-weight: 700;
+    font-style: 16px;
+    color: #000;
+}
+
+.etap {
+    position: relative;
+    margin-top: 67px;
+}
+
+.sold::before {
+    content: '';
+    display: block;
+    background-color: var(--cl-yellow);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    width: 86px;
+}
+
+.etap-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.etap-card img {
+    width: 331px;
+    height: 181px;
+}
+
+.video-image {
+    width: 100%;
+    margin-top: 67px;
+    position: absolute;
+}
+
+.image-section {
+    position: relative;
+}
+
+.footer {
+    margin-top: 67px;
+    padding: 40px 0;
+    background-color: var(--cl-green);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 1000px;
+    color: whitesmoke;
+    padding-top: 79px;
+    padding-bottom: 124px;
+}
+
+.footer-button {
+    padding: 12px 24px;
+    background-color: var(--cl-yellow);
+    color: black;
+    font-weight: 600;
+    border: none;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-big-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+}
+
+.logo-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+
 @media(max-width:1098px) {
     .container {
         padding: 0 10px;
@@ -453,18 +577,57 @@ body {
         align-items: center;
         justify-content: center;
         row-gap: 350px;
+
     }
 
     .work-card {
         width: 690px;
         height: 247px;
+        position: relative;
         -webkit-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
         -moz-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
         box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
     }
 
-    .work-card-wrapper:nth-child(3) {
+    .etap {
+        margin-top: 467px;
+    }
+
+    .etap-card {
+        width: 690px;
+        height: 245px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card3 {
         display: none;
+    }
+
+    .etap-card img {
+        display: none;
+    }
+
+    .etap-card-info {
+        width: 531px;
+    }
+
+    .etap-card-wrapper {
+        position: relative;
+        left: 180px;
+        top: 50px;
+    }
+
+    .video-image {
+        left: 60px;
+    }
+
+    .footer {
+        width: 100%;
+        left: 100px;
+        padding-left: -600px;
     }
 }
 
@@ -534,7 +697,6 @@ body {
         font-family: PT Sans;
         font-weight: 400;
         font-size: 15px;
-        leading-trim: NONE;
         line-height: 150%;
         letter-spacing: 0%;
 
@@ -556,10 +718,38 @@ body {
     .card1 {
         display: none;
     }
-    .card2{
+
+    .card3 {
         display: none;
     }
 
-    
+    .etap {
+        display: none;
+    }
 
+    .video-image {
+        top: 150px;
+        left: -1px;
+    }
+
+    .footer {
+        width: 100%;
+        top: 550px;
+        left: -0.5px;
+    }
+    .big-wrapper2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+
+     .footer-big-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
 }
