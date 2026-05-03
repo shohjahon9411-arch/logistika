@@ -265,6 +265,14 @@ body {
     color: var(--cl-silver);
 }
 
+.work-card-text {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cl-silver);
+    padding-top: 16px;
+    padding-bottom: 32px;
+}
+
 .work-card-wrapper {
     display: flex;
     align-items: center;
@@ -306,23 +314,27 @@ body {
 }
 
 .etap-card-info {
-    width: 556px;
-    height: 58px;
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-    position: relative;
+   
+}
+
+.etap-card-info p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cl-silver);
 }
 
 .sold {
-    position: relative;
+ 
     font-weight: 700;
     font-style: 16px;
     color: #000;
 }
 
 .etap {
-    position: relative;
+    
     margin-top: 67px;
 }
 
@@ -332,7 +344,7 @@ body {
     background-color: var(--cl-yellow);
     width: 100%;
     height: 2px;
-    position: absolute;
+   
     bottom: -5px;
     width: 86px;
 }
@@ -344,19 +356,17 @@ body {
 }
 
 .etap-card img {
-    width: 331px;
+    min-width: 331px;
     height: 181px;
 }
 
 .video-image {
     width: 100%;
     margin-top: 67px;
-    position: absolute;
+
 }
 
-.image-section {
-    position: relative;
-}
+
 
 .footer {
     margin-top: 67px;
@@ -365,11 +375,18 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-    position: relative;
+  
     top: 1000px;
     color: whitesmoke;
     padding-top: 79px;
     padding-bottom: 124px;
+}
+.footer-logo {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
 }
 
 .footer-button {
@@ -385,17 +402,11 @@ body {
 
 .footer-big-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     max-width: 1240px;
     margin: 0 auto;
 }
 
-.logo-wrapper {
-    display: flex;
-    align-items: start;
-    gap: 50px;
-}
+
 
 .logo-info-wrapper {
     display: flex;
@@ -408,7 +419,12 @@ body {
     flex-direction: column;
     row-gap: 25px;
 }
-
+.big-wrapper2   {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 97px;
+}
 
 @media(max-width:1098px) {
     .container {
@@ -520,7 +536,6 @@ body {
     }
 
     .bg-form {
-        position: absolute;
         clip-path: polygon(1% 0, 60% 0, 100% 100%, 0% 100%);
         background-color: #0B7572;
         z-index: 2;
@@ -583,7 +598,6 @@ body {
     .work-card {
         width: 690px;
         height: 247px;
-        position: relative;
         -webkit-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
         -moz-box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
         box-shadow: 2px 5px 15px 1px rgba(152, 145, 145, 0.415);
@@ -615,7 +629,6 @@ body {
     }
 
     .etap-card-wrapper {
-        position: relative;
         left: 180px;
         top: 50px;
     }
@@ -737,6 +750,7 @@ body {
         top: 550px;
         left: -0.5px;
     }
+
     .big-wrapper2 {
         display: flex;
         flex-direction: column;
@@ -745,7 +759,7 @@ body {
         row-gap: 50px;
     }
 
-     .footer-big-wrapper {
+    .footer-big-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
