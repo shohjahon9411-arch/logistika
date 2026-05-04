@@ -317,7 +317,7 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-   
+
 }
 
 .etap-card-info p {
@@ -327,14 +327,14 @@ body {
 }
 
 .sold {
- 
+    position: relative;
     font-weight: 700;
     font-style: 16px;
     color: #000;
 }
 
 .etap {
-    
+
     margin-top: 67px;
 }
 
@@ -344,8 +344,8 @@ body {
     background-color: var(--cl-yellow);
     width: 100%;
     height: 2px;
-   
-    bottom: -5px;
+    position: absolute;
+    bottom: -10px;
     width: 86px;
 }
 
@@ -375,12 +375,13 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
-  
+
     top: 1000px;
     color: whitesmoke;
     padding-top: 79px;
     padding-bottom: 124px;
 }
+
 .footer-logo {
     width: 120px;
     height: 40px;
@@ -390,8 +391,10 @@ body {
 }
 
 .footer-button {
+    width: 271px;
+    height: 42px;
     padding: 12px 24px;
-    background-color: var(--cl-yellow);
+    background-color: #ff9619;
     color: black;
     font-weight: 600;
     border: none;
@@ -419,11 +422,27 @@ body {
     flex-direction: column;
     row-gap: 25px;
 }
-.big-wrapper2   {
+
+.big-wrapper2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 97px;
+    column-gap: 350px;
+    padding-left: 50px;
+}
+
+.button-end {
+    display: flex;
+    flex-direction: column;
+    row-gap: 91px;
+}
+
+.krug {
+    width: 27px;
+    height: 27px;
+    border: 1px solid whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
 }
 
 @media(max-width:1098px) {
@@ -595,6 +614,10 @@ body {
 
     }
 
+    .big-wrapper2 {
+        row-gap: 101px;
+    }
+
     .work-card {
         width: 690px;
         height: 247px;
@@ -607,7 +630,7 @@ body {
         margin-top: 467px;
     }
 
-    .etap-card {
+    .etap-card{
         width: 690px;
         height: 245px;
         display: flex;
@@ -629,18 +652,24 @@ body {
     }
 
     .etap-card-wrapper {
-        left: 180px;
-        top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
     }
 
     .video-image {
         left: 60px;
-    }
+    } 
 
     .footer {
         width: 100%;
-        left: 100px;
-        padding-left: -600px;
+    }
+
+    .button-end {
+        width: 143px;
+        height: 21px;
     }
 }
 
@@ -757,6 +786,7 @@ body {
         align-items: center;
         justify-content: center;
         row-gap: 50px;
+        row-gap: 20px;
     }
 
     .footer-big-wrapper {
